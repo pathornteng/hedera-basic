@@ -32,7 +32,7 @@ async function main() {
   //Create a new account with 1,000 tinybar starting balance
   const newAccount = await new AccountCreateTransaction()
     .setKey(newAccountPublicKey)
-    .setInitialBalance(Hbar.fromTinybars(1000))
+    .setInitialBalance(Hbar.from(10))
     .execute(client);
 
   // Get the new account ID
@@ -46,10 +46,6 @@ async function main() {
     .setAccountId(newAccountId)
     .execute(client);
 
-  console.log(
-    "The new account balance is: " +
-      accountBalance.hbars.toTinybars() +
-      " tinybar."
-  );
+  console.log("The new account balance is: " + accountBalance.hbars.toString());
 }
 main();
