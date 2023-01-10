@@ -27,5 +27,5 @@ MY_PRIVATE_KEY = < enter testnet hedera private key
 To run a script such as creating a HCS topic and submiting a message
 
 ```bash
-submit-message-hcs.js
+node submit-message-hcs.js
 ```
