@@ -18,7 +18,8 @@ You need to configure private key and account id to run the script
 cp .env_sample .env
 ```
 
-MY_ACCOUNT_ID = < enter testnet hedera account id
+MY_ACCOUNT_ID = enter testnet hedera account id
+
 MY_PRIVATE_KEY = < enter testnet hedera private key
 
 ## Run scripts
